@@ -5,10 +5,7 @@
 
 ## Change Navbar Options
 
-open `./mysite/_data/navigation.yml`
-edit & add to the file as you need.
-
-```
+open `./mysite/_data/navigation.yml` and edit or add to the file as you need.
 ```
 - name: Home
   link: /
@@ -21,20 +18,4 @@ edit & add to the file as you need.
 - name: Resources
   link: /external_resources
 ```
-
-
-```
-- name: Home
-  link: /
-- name: Blog
-  link: /blogs
-- name: Projects
-  link: /projects
-- name: Notes
-  link: /notes
-- name: About
-  link: /about
-```
-
-
 
