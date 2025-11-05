@@ -1,0 +1,39 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+
+      {% include head.html %}
+
+  </head>
+
+  <body>      
+
+      <header>
+        <div class = "header_wrapper">
+          <a href="/" class="navbar_logo">Jekyll Blog Template</a>
+        </div>
+      </header>
+
+      <nav class="navbar">
+        {% for item in site.data.navigation %}          
+        <a href="{{ item.link }}"{% if page.url == item.link %} class="current_url"{% endif %}>{{ item.name }}</a>          
+        {% endfor %}          
+      </nav>
+
+      <main>
+
+        {{ content }}
+
+      </main>
+
+      <footer>
+ 
+        {% include footer.html %}
+
+      </footer>
+
+  </body>
+
+</html>
+

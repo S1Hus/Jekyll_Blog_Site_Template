@@ -1,0 +1,30 @@
+---
+layout: default
+title: Blog
+permalink: /blogs
+---
+<div class="content_container">
+  <h1>Blog Topics:</h1>
+  
+  <div class="topics">
+      <button class="filter_btn" onclick="filterProjects('All')">All</button>
+      <button class="filter_btn" onclick="filterProjects('Kernel')">Kernel</button>
+      <button class="filter_btn" onclick="filterProjects('Web')">Web</button>
+      <button class="filter_btn" onclick="filterProjects('Example')">Example</button>
+  </div>
+</div>
+
+<hr>
+{% for post in site.posts %}
+  {% if post.tag == "blog" %}
+    <ul class="post-item" data-cats="{{post.categories | join: ','}}">
+      <a href="{{post.url}}" style="text-decoration: none; color: inherit;">
+        <div class="blogs">
+            <h2 class="post_url" style="color: #0000EE;">{{ post.title }}</h2>
+            {{ post.excerpt }}
+        </div>
+      </a>
+    </ul>
+    {% endif %}
+{% endfor %}
+<br>

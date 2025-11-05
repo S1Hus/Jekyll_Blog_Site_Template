@@ -1,0 +1,109 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+
+      <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="robots" content="index,follow" />
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<meta name="description" content="">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script src="/assets/js/filter.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" >
+
+<title>Blog</title>
+
+<base href="http://localhost:4000">
+
+
+  </head>
+
+  <body>      
+
+      <header>
+        <div class = "header_wrapper">
+          <a href="/" class="navbar_logo">Jekyll Blog Template</a>
+        </div>
+      </header>
+
+      <nav class="navbar">
+                  
+        <a href="/">Home</a>          
+                  
+        <a href="/blogs" class="current_url">Blog</a>          
+                  
+        <a href="/projects">Projects</a>          
+                  
+        <a href="/notes">Notes</a>          
+                  
+        <a href="/external_resources">Resources</a>          
+                  
+      </nav>
+
+      <main>
+
+        <div class="content_container">
+  <h1>Blog Topics:</h1>
+  
+  <div class="topics">
+      <button class="filter_btn" onclick="filterProjects('All')">All</button>
+      <button class="filter_btn" onclick="filterProjects('Kernel')">Kernel</button>
+      <button class="filter_btn" onclick="filterProjects('Web')">Web</button>
+      <button class="filter_btn" onclick="filterProjects('Example')">Example</button>
+  </div>
+</div>
+
+<hr>
+
+  
+
+  
+
+  
+
+  
+    <ul class="post-item" data-cats="Example">
+      <a href="/blogs/blog_2" style="text-decoration: none; color: inherit;">
+        <div class="blogs">
+            <h2 class="post_url" style="color: #0000EE;">Blog_2</h2>
+            <p>Content Here.</p>
+
+        </div>
+      </a>
+    </ul>
+    
+
+  
+    <ul class="post-item" data-cats="Example">
+      <a href="/blogs/blog_1" style="text-decoration: none; color: inherit;">
+        <div class="blogs">
+            <h2 class="post_url" style="color: #0000EE;">Blog_1</h2>
+            <p>Content Here.</p>
+
+        </div>
+      </a>
+    </ul>
+    
+
+  
+
+<br>
+
+
+      </main>
+
+      <footer>
+ 
+        <footer>
+<p>&copy; 2025 legal stuff</p>
+</footer>
+
+
+      </footer>
+
+  </body>
+
+</html>
+
